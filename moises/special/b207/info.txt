@@ -1,0 +1,99 @@
+Mix : 0.25s_A16_0 :
+	Memory: ../consignes_generation_2025/moises/special/b207/Mem_other_keys.wav
+	Sources:
+	 - ../consignes_generation_2025/moises/special/b207/Guide_bass.wav
+	Model : canonne_0.25s_A16_SchedSamp_SpecVQ
+	Params :
+		vocab_size = 16, segmentation = uniform, w_size = 0.25[s]
+		top-K = 0.8, with_coupling = True, remove = False, decoding = greedy, force_coupling = True, temperature = 1.0, entropy_weight = 0.0
+	Analysis :
+		accuracy = 30.32%, mean_len = 2.15, median_len = 1.00, max_len = 16, entropy = 2.57 [Bits], gt_set_portion = 57.89%
+
+Mix : 0.25s_A256_0 :
+	Memory: ../consignes_generation_2025/moises/special/b207/Mem_other_keys.wav
+	Sources:
+	 - ../consignes_generation_2025/moises/special/b207/Guide_bass.wav
+	Model : canonne_0.25s_A256_SchedSamp_SpecVQ_1_continued
+	Params :
+		vocab_size = 256, segmentation = uniform, w_size = 0.25[s]
+		top-K = 0.8, with_coupling = True, remove = False, decoding = greedy, force_coupling = True, temperature = 1.0, entropy_weight = 0.0
+	Analysis :
+		accuracy = 9.03%, mean_len = 2.30, median_len = 1.00, max_len = 16, entropy = 2.04 [Bits], gt_set_portion = 8.88%
+
+Mix : 0.25s_A64_0 :
+	Memory: ../consignes_generation_2025/moises/special/b207/Mem_other_keys.wav
+	Sources:
+	 - ../consignes_generation_2025/moises/special/b207/Guide_bass.wav
+	Model : canonne_0.25s_A64_SchedSamp_SpecVQ_2_continued
+	Params :
+		vocab_size = 64, segmentation = uniform, w_size = 0.25[s]
+		top-K = 0.8, with_coupling = True, remove = False, decoding = greedy, force_coupling = True, temperature = 1.0, entropy_weight = 0.0
+	Analysis :
+		accuracy = 8.71%, mean_len = 1.59, median_len = 1.00, max_len = 7, entropy = 2.67 [Bits], gt_set_portion = 22.39%
+
+Mix : 0.35s_A16_0 :
+	Memory: ../consignes_generation_2025/moises/special/b207/Mem_other_keys.wav
+	Sources:
+	 - ../consignes_generation_2025/moises/special/b207/Guide_bass.wav
+	Model : canonne_0.35s_A16_SchedSamp_SpecVQ
+	Params :
+		vocab_size = 16, segmentation = uniform, w_size = 0.35[s]
+		top-K = 0.8, with_coupling = True, remove = False, decoding = greedy, force_coupling = True, temperature = 1.0, entropy_weight = 0.0
+	Analysis :
+		accuracy = 28.64%, mean_len = 3.52, median_len = 2.00, max_len = 13, entropy = 1.34 [Bits], gt_set_portion = 36.84%
+
+Mix : 0.35s_A256_0 :
+	Memory: ../consignes_generation_2025/moises/special/b207/Mem_other_keys.wav
+	Sources:
+	 - ../consignes_generation_2025/moises/special/b207/Guide_bass.wav
+	Model : canonne_0.35s_A256_SchedSamp_SpecVQ_2_continued
+	Params :
+		vocab_size = 256, segmentation = uniform, w_size = 0.35[s]
+		top-K = 0.8, with_coupling = True, remove = False, decoding = greedy, force_coupling = True, temperature = 1.0, entropy_weight = 0.0
+	Analysis :
+		accuracy = 6.36%, mean_len = 1.29, median_len = 1.00, max_len = 5, entropy = 3.28 [Bits], gt_set_portion = 8.49%
+
+Mix : 0.35s_A64_0 :
+	Memory: ../consignes_generation_2025/moises/special/b207/Mem_other_keys.wav
+	Sources:
+	 - ../consignes_generation_2025/moises/special/b207/Guide_bass.wav
+	Model : canonne_0.35s_A64_SchedSamp_SpecVQ_2_continued
+	Params :
+		vocab_size = 64, segmentation = uniform, w_size = 0.35[s]
+		top-K = 0.8, with_coupling = True, remove = False, decoding = greedy, force_coupling = True, temperature = 1.0, entropy_weight = 0.0
+	Analysis :
+		accuracy = 4.09%, mean_len = 1.34, median_len = 1.00, max_len = 5, entropy = 2.73 [Bits], gt_set_portion = 22.39%
+
+Mix : 0.5s_A16_0 :
+	Memory: ../consignes_generation_2025/moises/special/b207/Mem_other_keys.wav
+	Sources:
+	 - ../consignes_generation_2025/moises/special/b207/Guide_bass.wav
+	Model : canonne_0.5s_A16_SchedSamp_SpecVQ
+	Params :
+		vocab_size = 16, segmentation = uniform, w_size = 0.5[s]
+		top-K = 0.8, with_coupling = True, remove = False, decoding = greedy, force_coupling = True, temperature = 1.0, entropy_weight = 0.0
+	Analysis :
+		accuracy = 34.38%, mean_len = 2.65, median_len = 2.00, max_len = 10, entropy = 2.04 [Bits], gt_set_portion = 36.84%
+
+Mix : 0.5s_A256_0 :
+	Memory: ../consignes_generation_2025/moises/special/b207/Mem_other_keys.wav
+	Sources:
+	 - ../consignes_generation_2025/moises/special/b207/Guide_bass.wav
+	Model : canonne_0.5s_A256_SchedSamp_SpecVQ_continued
+	Params :
+		vocab_size = 256, segmentation = uniform, w_size = 0.5[s]
+		top-K = 0.8, with_coupling = True, remove = False, decoding = greedy, force_coupling = True, temperature = 1.0, entropy_weight = 0.0
+	Analysis :
+		accuracy = 11.88%, mean_len = 2.24, median_len = 1.00, max_len = 8, entropy = 1.98 [Bits], gt_set_portion = 9.27%
+
+Mix : 0.5s_A64_0 :
+	Memory: ../consignes_generation_2025/moises/special/b207/Mem_other_keys.wav
+	Sources:
+	 - ../consignes_generation_2025/moises/special/b207/Guide_bass.wav
+	Model : canonne_0.5s_A64_SchedSamp_SpecVQ_3
+	Params :
+		vocab_size = 64, segmentation = uniform, w_size = 0.5[s]
+		top-K = 0.8, with_coupling = True, remove = False, decoding = greedy, force_coupling = True, temperature = 1.0, entropy_weight = 0.0
+	Analysis :
+		accuracy = 11.25%, mean_len = 1.15, median_len = 1.00, max_len = 2, entropy = 2.37 [Bits], gt_set_portion = 22.39%
+

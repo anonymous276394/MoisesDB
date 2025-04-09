@@ -1,0 +1,99 @@
+Mix : 0.25s_A16_0 :
+	Memory: ../consignes_generation_2025/moises/relation_harmonique/6c70/Mem2_guitar.wav
+	Sources:
+	 - ../consignes_generation_2025/moises/relation_harmonique/6c70/Guide_piano.wav
+	Model : canonne_0.25s_A16_SchedSamp_SpecVQ
+	Params :
+		vocab_size = 16, segmentation = uniform, w_size = 0.25[s]
+		top-K = 0.8, with_coupling = True, remove = False, decoding = greedy, force_coupling = True, temperature = 1.0, entropy_weight = 0.0
+	Analysis :
+		accuracy = 7.66%, mean_len = 1.85, median_len = 1.00, max_len = 12, entropy = 1.35 [Bits], gt_set_portion = 63.16%
+
+Mix : 0.25s_A256_0 :
+	Memory: ../consignes_generation_2025/moises/relation_harmonique/6c70/Mem2_guitar.wav
+	Sources:
+	 - ../consignes_generation_2025/moises/relation_harmonique/6c70/Guide_piano.wav
+	Model : canonne_0.25s_A256_SchedSamp_SpecVQ_1_continued
+	Params :
+		vocab_size = 256, segmentation = uniform, w_size = 0.25[s]
+		top-K = 0.8, with_coupling = True, remove = False, decoding = greedy, force_coupling = True, temperature = 1.0, entropy_weight = 0.0
+	Analysis :
+		accuracy = 1.01%, mean_len = 1.19, median_len = 1.00, max_len = 3, entropy = 4.54 [Bits], gt_set_portion = 18.15%
+
+Mix : 0.25s_A64_0 :
+	Memory: ../consignes_generation_2025/moises/relation_harmonique/6c70/Mem2_guitar.wav
+	Sources:
+	 - ../consignes_generation_2025/moises/relation_harmonique/6c70/Guide_piano.wav
+	Model : canonne_0.25s_A64_SchedSamp_SpecVQ_2_continued
+	Params :
+		vocab_size = 64, segmentation = uniform, w_size = 0.25[s]
+		top-K = 0.8, with_coupling = True, remove = False, decoding = greedy, force_coupling = True, temperature = 1.0, entropy_weight = 0.0
+	Analysis :
+		accuracy = 2.22%, mean_len = 1.19, median_len = 1.00, max_len = 3, entropy = 3.24 [Bits], gt_set_portion = 34.33%
+
+Mix : 0.35s_A16_0 :
+	Memory: ../consignes_generation_2025/moises/relation_harmonique/6c70/Mem2_guitar.wav
+	Sources:
+	 - ../consignes_generation_2025/moises/relation_harmonique/6c70/Guide_piano.wav
+	Model : canonne_0.35s_A16_SchedSamp_SpecVQ
+	Params :
+		vocab_size = 16, segmentation = uniform, w_size = 0.35[s]
+		top-K = 0.8, with_coupling = True, remove = False, decoding = greedy, force_coupling = True, temperature = 1.0, entropy_weight = 0.0
+	Analysis :
+		accuracy = 2.98%, mean_len = 1.26, median_len = 1.00, max_len = 6, entropy = 2.61 [Bits], gt_set_portion = 52.63%
+
+Mix : 0.35s_A256_0 :
+	Memory: ../consignes_generation_2025/moises/relation_harmonique/6c70/Mem2_guitar.wav
+	Sources:
+	 - ../consignes_generation_2025/moises/relation_harmonique/6c70/Guide_piano.wav
+	Model : canonne_0.35s_A256_SchedSamp_SpecVQ_2_continued
+	Params :
+		vocab_size = 256, segmentation = uniform, w_size = 0.35[s]
+		top-K = 0.8, with_coupling = True, remove = False, decoding = greedy, force_coupling = True, temperature = 1.0, entropy_weight = 0.0
+	Analysis :
+		accuracy = 1.28%, mean_len = 1.23, median_len = 1.00, max_len = 3, entropy = 4.51 [Bits], gt_set_portion = 18.92%
+
+Mix : 0.35s_A64_0 :
+	Memory: ../consignes_generation_2025/moises/relation_harmonique/6c70/Mem2_guitar.wav
+	Sources:
+	 - ../consignes_generation_2025/moises/relation_harmonique/6c70/Guide_piano.wav
+	Model : canonne_0.35s_A64_SchedSamp_SpecVQ_2_continued
+	Params :
+		vocab_size = 64, segmentation = uniform, w_size = 0.35[s]
+		top-K = 0.8, with_coupling = True, remove = False, decoding = greedy, force_coupling = True, temperature = 1.0, entropy_weight = 0.0
+	Analysis :
+		accuracy = 2.41%, mean_len = 1.31, median_len = 1.00, max_len = 4, entropy = 3.14 [Bits], gt_set_portion = 32.84%
+
+Mix : 0.5s_A16_0 :
+	Memory: ../consignes_generation_2025/moises/relation_harmonique/6c70/Mem2_guitar.wav
+	Sources:
+	 - ../consignes_generation_2025/moises/relation_harmonique/6c70/Guide_piano.wav
+	Model : canonne_0.5s_A16_SchedSamp_SpecVQ
+	Params :
+		vocab_size = 16, segmentation = uniform, w_size = 0.5[s]
+		top-K = 0.8, with_coupling = True, remove = False, decoding = greedy, force_coupling = True, temperature = 1.0, entropy_weight = 0.0
+	Analysis :
+		accuracy = 3.52%, mean_len = 1.85, median_len = 1.00, max_len = 9, entropy = 1.79 [Bits], gt_set_portion = 52.63%
+
+Mix : 0.5s_A256_0 :
+	Memory: ../consignes_generation_2025/moises/relation_harmonique/6c70/Mem2_guitar.wav
+	Sources:
+	 - ../consignes_generation_2025/moises/relation_harmonique/6c70/Guide_piano.wav
+	Model : canonne_0.5s_A256_SchedSamp_SpecVQ_continued
+	Params :
+		vocab_size = 256, segmentation = uniform, w_size = 0.5[s]
+		top-K = 0.8, with_coupling = True, remove = False, decoding = greedy, force_coupling = True, temperature = 1.0, entropy_weight = 0.0
+	Analysis :
+		accuracy = 1.56%, mean_len = 1.07, median_len = 1.00, max_len = 2, entropy = 2.99 [Bits], gt_set_portion = 17.37%
+
+Mix : 0.5s_A64_0 :
+	Memory: ../consignes_generation_2025/moises/relation_harmonique/6c70/Mem2_guitar.wav
+	Sources:
+	 - ../consignes_generation_2025/moises/relation_harmonique/6c70/Guide_piano.wav
+	Model : canonne_0.5s_A64_SchedSamp_SpecVQ_3
+	Params :
+		vocab_size = 64, segmentation = uniform, w_size = 0.5[s]
+		top-K = 0.8, with_coupling = True, remove = False, decoding = greedy, force_coupling = True, temperature = 1.0, entropy_weight = 0.0
+	Analysis :
+		accuracy = 1.37%, mean_len = 1.07, median_len = 1.00, max_len = 3, entropy = 2.84 [Bits], gt_set_portion = 31.34%
+

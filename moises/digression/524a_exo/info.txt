@@ -1,0 +1,99 @@
+Mix : 0.25s_A16_0 :
+	Memory: ../consignes_generation_2025/moises/digression/524a/Mem2_piano.wav
+	Sources:
+	 - ../consignes_generation_2025/moises/digression/524a/Guide_bass.wav
+	Model : canonne_0.25s_A16_SchedSamp_SpecVQ
+	Params :
+		vocab_size = 16, segmentation = uniform, w_size = 0.25[s]
+		top-K = 0.8, with_coupling = True, remove = False, decoding = greedy, force_coupling = True, temperature = 1.0, entropy_weight = 0.0
+	Analysis :
+		accuracy = 5.14%, mean_len = 1.57, median_len = 1.00, max_len = 7, entropy = 2.13 [Bits], gt_set_portion = 73.68%
+
+Mix : 0.25s_A256_0 :
+	Memory: ../consignes_generation_2025/moises/digression/524a/Mem2_piano.wav
+	Sources:
+	 - ../consignes_generation_2025/moises/digression/524a/Guide_bass.wav
+	Model : canonne_0.25s_A256_SchedSamp_SpecVQ_1_continued
+	Params :
+		vocab_size = 256, segmentation = uniform, w_size = 0.25[s]
+		top-K = 0.8, with_coupling = True, remove = False, decoding = greedy, force_coupling = True, temperature = 1.0, entropy_weight = 0.0
+	Analysis :
+		accuracy = 2.12%, mean_len = 1.45, median_len = 1.00, max_len = 5, entropy = 3.93 [Bits], gt_set_portion = 20.85%
+
+Mix : 0.25s_A64_0 :
+	Memory: ../consignes_generation_2025/moises/digression/524a/Mem2_piano.wav
+	Sources:
+	 - ../consignes_generation_2025/moises/digression/524a/Guide_bass.wav
+	Model : canonne_0.25s_A64_SchedSamp_SpecVQ_2_continued
+	Params :
+		vocab_size = 64, segmentation = uniform, w_size = 0.25[s]
+		top-K = 0.8, with_coupling = True, remove = False, decoding = greedy, force_coupling = True, temperature = 1.0, entropy_weight = 0.0
+	Analysis :
+		accuracy = 4.23%, mean_len = 1.82, median_len = 1.00, max_len = 8, entropy = 2.17 [Bits], gt_set_portion = 34.33%
+
+Mix : 0.35s_A16_0 :
+	Memory: ../consignes_generation_2025/moises/digression/524a/Mem2_piano.wav
+	Sources:
+	 - ../consignes_generation_2025/moises/digression/524a/Guide_bass.wav
+	Model : canonne_0.35s_A16_SchedSamp_SpecVQ
+	Params :
+		vocab_size = 16, segmentation = uniform, w_size = 0.35[s]
+		top-K = 0.8, with_coupling = True, remove = False, decoding = greedy, force_coupling = True, temperature = 1.0, entropy_weight = 0.0
+	Analysis :
+		accuracy = 3.98%, mean_len = 1.79, median_len = 1.00, max_len = 7, entropy = 1.25 [Bits], gt_set_portion = 52.63%
+
+Mix : 0.35s_A256_0 :
+	Memory: ../consignes_generation_2025/moises/digression/524a/Mem2_piano.wav
+	Sources:
+	 - ../consignes_generation_2025/moises/digression/524a/Guide_bass.wav
+	Model : canonne_0.35s_A256_SchedSamp_SpecVQ_2_continued
+	Params :
+		vocab_size = 256, segmentation = uniform, w_size = 0.35[s]
+		top-K = 0.8, with_coupling = True, remove = False, decoding = greedy, force_coupling = True, temperature = 1.0, entropy_weight = 0.0
+	Analysis :
+		accuracy = 1.85%, mean_len = 1.48, median_len = 1.00, max_len = 5, entropy = 4.16 [Bits], gt_set_portion = 20.85%
+
+Mix : 0.35s_A64_0 :
+	Memory: ../consignes_generation_2025/moises/digression/524a/Mem2_piano.wav
+	Sources:
+	 - ../consignes_generation_2025/moises/digression/524a/Guide_bass.wav
+	Model : canonne_0.35s_A64_SchedSamp_SpecVQ_2_continued
+	Params :
+		vocab_size = 64, segmentation = uniform, w_size = 0.35[s]
+		top-K = 0.8, with_coupling = True, remove = False, decoding = greedy, force_coupling = True, temperature = 1.0, entropy_weight = 0.0
+	Analysis :
+		accuracy = 1.85%, mean_len = 1.23, median_len = 1.00, max_len = 3, entropy = 2.90 [Bits], gt_set_portion = 40.30%
+
+Mix : 0.5s_A16_0 :
+	Memory: ../consignes_generation_2025/moises/digression/524a/Mem2_piano.wav
+	Sources:
+	 - ../consignes_generation_2025/moises/digression/524a/Guide_bass.wav
+	Model : canonne_0.5s_A16_SchedSamp_SpecVQ
+	Params :
+		vocab_size = 16, segmentation = uniform, w_size = 0.5[s]
+		top-K = 0.8, with_coupling = True, remove = False, decoding = greedy, force_coupling = True, temperature = 1.0, entropy_weight = 0.0
+	Analysis :
+		accuracy = 3.52%, mean_len = 1.44, median_len = 1.00, max_len = 6, entropy = 1.74 [Bits], gt_set_portion = 52.63%
+
+Mix : 0.5s_A256_0 :
+	Memory: ../consignes_generation_2025/moises/digression/524a/Mem2_piano.wav
+	Sources:
+	 - ../consignes_generation_2025/moises/digression/524a/Guide_bass.wav
+	Model : canonne_0.5s_A256_SchedSamp_SpecVQ_continued
+	Params :
+		vocab_size = 256, segmentation = uniform, w_size = 0.5[s]
+		top-K = 0.8, with_coupling = True, remove = False, decoding = greedy, force_coupling = True, temperature = 1.0, entropy_weight = 0.0
+	Analysis :
+		accuracy = 1.17%, mean_len = 1.16, median_len = 1.00, max_len = 3, entropy = 3.74 [Bits], gt_set_portion = 23.55%
+
+Mix : 0.5s_A64_0 :
+	Memory: ../consignes_generation_2025/moises/digression/524a/Mem2_piano.wav
+	Sources:
+	 - ../consignes_generation_2025/moises/digression/524a/Guide_bass.wav
+	Model : canonne_0.5s_A64_SchedSamp_SpecVQ_3
+	Params :
+		vocab_size = 64, segmentation = uniform, w_size = 0.5[s]
+		top-K = 0.8, with_coupling = True, remove = False, decoding = greedy, force_coupling = True, temperature = 1.0, entropy_weight = 0.0
+	Analysis :
+		accuracy = 2.34%, mean_len = 1.60, median_len = 1.00, max_len = 4, entropy = 1.76 [Bits], gt_set_portion = 38.81%
+

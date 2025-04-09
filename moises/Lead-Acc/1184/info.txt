@@ -1,0 +1,99 @@
+Mix : 0.25s_A16_0 :
+	Memory: ../consignes_generation_2025/moises/Lead-Acc/1184/Mem_other_keys.wav
+	Sources:
+	 - ../consignes_generation_2025/moises/Lead-Acc/1184/Guide_guitar.wav
+	Model : canonne_0.25s_A16_SchedSamp_SpecVQ
+	Params :
+		vocab_size = 16, segmentation = uniform, w_size = 0.25[s]
+		top-K = 0.8, with_coupling = True, remove = False, decoding = greedy, force_coupling = True, temperature = 1.0, entropy_weight = 0.0
+	Analysis :
+		accuracy = 7.42%, mean_len = 2.21, median_len = 1.00, max_len = 29, entropy = 2.50 [Bits], gt_set_portion = 68.42%
+
+Mix : 0.25s_A256_0 :
+	Memory: ../consignes_generation_2025/moises/Lead-Acc/1184/Mem_other_keys.wav
+	Sources:
+	 - ../consignes_generation_2025/moises/Lead-Acc/1184/Guide_guitar.wav
+	Model : canonne_0.25s_A256_SchedSamp_SpecVQ_1_continued
+	Params :
+		vocab_size = 256, segmentation = uniform, w_size = 0.25[s]
+		top-K = 0.8, with_coupling = True, remove = False, decoding = greedy, force_coupling = True, temperature = 1.0, entropy_weight = 0.0
+	Analysis :
+		accuracy = 7.74%, mean_len = 1.45, median_len = 1.00, max_len = 9, entropy = 3.76 [Bits], gt_set_portion = 18.15%
+
+Mix : 0.25s_A64_0 :
+	Memory: ../consignes_generation_2025/moises/Lead-Acc/1184/Mem_other_keys.wav
+	Sources:
+	 - ../consignes_generation_2025/moises/Lead-Acc/1184/Guide_guitar.wav
+	Model : canonne_0.25s_A64_SchedSamp_SpecVQ_2_continued
+	Params :
+		vocab_size = 64, segmentation = uniform, w_size = 0.25[s]
+		top-K = 0.8, with_coupling = True, remove = False, decoding = greedy, force_coupling = True, temperature = 1.0, entropy_weight = 0.0
+	Analysis :
+		accuracy = 12.58%, mean_len = 1.88, median_len = 1.00, max_len = 8, entropy = 3.05 [Bits], gt_set_portion = 34.33%
+
+Mix : 0.35s_A16_0 :
+	Memory: ../consignes_generation_2025/moises/Lead-Acc/1184/Mem_other_keys.wav
+	Sources:
+	 - ../consignes_generation_2025/moises/Lead-Acc/1184/Guide_guitar.wav
+	Model : canonne_0.35s_A16_SchedSamp_SpecVQ
+	Params :
+		vocab_size = 16, segmentation = uniform, w_size = 0.35[s]
+		top-K = 0.8, with_coupling = True, remove = False, decoding = greedy, force_coupling = True, temperature = 1.0, entropy_weight = 0.0
+	Analysis :
+		accuracy = 24.55%, mean_len = 2.19, median_len = 1.00, max_len = 14, entropy = 1.63 [Bits], gt_set_portion = 57.89%
+
+Mix : 0.35s_A256_0 :
+	Memory: ../consignes_generation_2025/moises/Lead-Acc/1184/Mem_other_keys.wav
+	Sources:
+	 - ../consignes_generation_2025/moises/Lead-Acc/1184/Guide_guitar.wav
+	Model : canonne_0.35s_A256_SchedSamp_SpecVQ_2_continued
+	Params :
+		vocab_size = 256, segmentation = uniform, w_size = 0.35[s]
+		top-K = 0.8, with_coupling = True, remove = False, decoding = greedy, force_coupling = True, temperature = 1.0, entropy_weight = 0.0
+	Analysis :
+		accuracy = 5.45%, mean_len = 1.95, median_len = 1.00, max_len = 21, entropy = 3.38 [Bits], gt_set_portion = 15.06%
+
+Mix : 0.35s_A64_0 :
+	Memory: ../consignes_generation_2025/moises/Lead-Acc/1184/Mem_other_keys.wav
+	Sources:
+	 - ../consignes_generation_2025/moises/Lead-Acc/1184/Guide_guitar.wav
+	Model : canonne_0.35s_A64_SchedSamp_SpecVQ_2_continued
+	Params :
+		vocab_size = 64, segmentation = uniform, w_size = 0.35[s]
+		top-K = 0.8, with_coupling = True, remove = False, decoding = greedy, force_coupling = True, temperature = 1.0, entropy_weight = 0.0
+	Analysis :
+		accuracy = 18.18%, mean_len = 1.57, median_len = 1.00, max_len = 16, entropy = 3.61 [Bits], gt_set_portion = 37.31%
+
+Mix : 0.5s_A16_0 :
+	Memory: ../consignes_generation_2025/moises/Lead-Acc/1184/Mem_other_keys.wav
+	Sources:
+	 - ../consignes_generation_2025/moises/Lead-Acc/1184/Guide_guitar.wav
+	Model : canonne_0.5s_A16_SchedSamp_SpecVQ
+	Params :
+		vocab_size = 16, segmentation = uniform, w_size = 0.5[s]
+		top-K = 0.8, with_coupling = True, remove = False, decoding = greedy, force_coupling = True, temperature = 1.0, entropy_weight = 0.0
+	Analysis :
+		accuracy = 14.37%, mean_len = 2.48, median_len = 1.00, max_len = 15, entropy = 1.86 [Bits], gt_set_portion = 47.37%
+
+Mix : 0.5s_A256_0 :
+	Memory: ../consignes_generation_2025/moises/Lead-Acc/1184/Mem_other_keys.wav
+	Sources:
+	 - ../consignes_generation_2025/moises/Lead-Acc/1184/Guide_guitar.wav
+	Model : canonne_0.5s_A256_SchedSamp_SpecVQ_continued
+	Params :
+		vocab_size = 256, segmentation = uniform, w_size = 0.5[s]
+		top-K = 0.8, with_coupling = True, remove = False, decoding = greedy, force_coupling = True, temperature = 1.0, entropy_weight = 0.0
+	Analysis :
+		accuracy = 12.50%, mean_len = 1.28, median_len = 1.00, max_len = 6, entropy = 3.78 [Bits], gt_set_portion = 16.22%
+
+Mix : 0.5s_A64_0 :
+	Memory: ../consignes_generation_2025/moises/Lead-Acc/1184/Mem_other_keys.wav
+	Sources:
+	 - ../consignes_generation_2025/moises/Lead-Acc/1184/Guide_guitar.wav
+	Model : canonne_0.5s_A64_SchedSamp_SpecVQ_3
+	Params :
+		vocab_size = 64, segmentation = uniform, w_size = 0.5[s]
+		top-K = 0.8, with_coupling = True, remove = False, decoding = greedy, force_coupling = True, temperature = 1.0, entropy_weight = 0.0
+	Analysis :
+		accuracy = 16.88%, mean_len = 1.41, median_len = 1.00, max_len = 5, entropy = 3.05 [Bits], gt_set_portion = 41.79%
+
