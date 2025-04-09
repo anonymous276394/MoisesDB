@@ -9,35 +9,45 @@
             font-family: Arial, sans-serif;
             background-color: #f4f4f4;
             padding: 20px;
+            line-height: 1.6;
+        }
+        .intro-section {
+            background: #fff;
+            padding: 20px;
+            border-left: 5px solid #007BFF;
+            margin-bottom: 40px;
+            box-shadow: 0 0 8px rgba(0,0,0,0.05);
         }
         .category-section {
-            margin-bottom: 40px;
+            margin-bottom: 60px;
         }
         .category-title {
-            font-size: 1.5em;
+            font-size: 1.8em;
             font-weight: bold;
-            margin-bottom: 10px;
+            margin-bottom: 20px;
+            text-align: center;
+            color: #333;
         }
         .grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 10px;
-            width: 80%;
-            margin: 40px auto;
+            width: 90%;
+            margin: 20px auto;
         }
         .audio-container {
             background: white;
             padding: 10px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
             text-align: center;
         }
         .example-group {
-            margin-bottom: 30px;
+            margin-bottom: 40px;
         }
         .exo-label {
             font-weight: bold;
-            color: red;
+            color: #C0392B;
             text-align: center;
             margin-top: 10px;
             margin-bottom: 20px;
@@ -47,10 +57,32 @@
             justify-content: center;
             gap: 10px;
             margin-bottom: 10px;
+            flex-wrap: wrap;
+        }
+        hr.separator {
+            border: none;
+            border-top: 2px dashed #ccc;
+            margin: 40px auto;
+            width: 80%;
         }
     </style>
 </head>
 <body>
+
+    <!-- 🔹 Intro Section -->
+    <div class="intro-section">
+        <h2>Welcome to the Audio Demo for MoisesDB</h2>
+        <p>
+            This page presents the audio results from our research, grouped by musical relationships such as
+            <strong>intensity</strong>, <strong>density</strong>, and <strong>lead-accompaniment dynamics</strong>.
+            Each example is accompanied by both its original version and its exogenous memory variant for comparison.
+        </p>
+        <p>
+            Use the audio players below to explore the differences between conditions. For each example, we show
+            <strong>memory</strong>, <strong>guide</strong>, and nine variations, followed by the same structure for the exogenous version.
+        </p>
+    </div>
+
     <div id="audioContent"></div>
 
     <script>
@@ -105,113 +137,116 @@
         Object.entries(categories).forEach(([category, pairs]) => {
             const section = document.createElement('div');
             section.className = 'category-section';
-            
+
             const title = document.createElement('div');
             title.className = 'category-title';
             title.textContent = `Musical Relationship: ${category}`;
-            
+
             section.appendChild(title);
-            
-            pairs.forEach(([example, exampleExo]) => {
+
+            pairs.forEach(([example, exampleExo], index) => {
                 const exampleGroup = document.createElement('div');
                 exampleGroup.className = 'example-group';
-                
+
                 const memoryGuideRow = document.createElement('div');
                 memoryGuideRow.className = 'memory-guide-row';
-                
-                fullSet.forEach((file, index) => {
-                    if (index === 0 && example.includes('_exo')) return;
+
+                fullSet.forEach((file, i) => {
+                    if (i === 0 && example.includes('_exo')) return;
                     const container = document.createElement('div');
                     container.className = 'audio-container';
-                    
+
                     const audio = document.createElement('audio');
                     audio.controls = true;
                     audio.src = `${root}/${category}/${example}/${file}`;
                     audio.preload = "none";
-                    
+
                     const label = document.createElement('p');
                     label.textContent = `${example} - ${file}`;
-                    
+
                     container.appendChild(label);
                     container.appendChild(audio);
                     memoryGuideRow.appendChild(container);
                 });
-                
+
                 exampleGroup.appendChild(memoryGuideRow);
-                
+
                 const grid = document.createElement('div');
                 grid.className = 'grid';
-                
+
                 exampleSet.forEach(file => {
                     const container = document.createElement('div');
                     container.className = 'audio-container';
-                    
+
                     const audio = document.createElement('audio');
                     audio.controls = true;
                     audio.src = `${root}/${category}/${example}/${file}`;
                     audio.preload = "none";
-                    
+
                     const label = document.createElement('p');
                     label.textContent = `${example} - ${file}`;
-                    
+
                     container.appendChild(label);
                     container.appendChild(audio);
                     grid.appendChild(container);
                 });
-                
+
                 exampleGroup.appendChild(grid);
                 section.appendChild(exampleGroup);
-                
+
                 const exoLabel = document.createElement('div');
                 exoLabel.className = 'exo-label';
                 exoLabel.textContent = 'Mémoire Exogène';
                 section.appendChild(exoLabel);
-                
+
                 const exoRow = document.createElement('div');
                 exoRow.className = 'memory-guide-row';
-                
+
                 exoSet.forEach(file => {
                     const container = document.createElement('div');
                     container.className = 'audio-container';
-                    
+
                     const audio = document.createElement('audio');
                     audio.controls = true;
                     audio.src = `${root}/${category}/${exampleExo}/${file}`;
                     audio.preload = "none";
-                    
+
                     const label = document.createElement('p');
                     label.textContent = `${exampleExo} - ${file}`;
-                    
+
                     container.appendChild(label);
                     container.appendChild(audio);
                     exoRow.appendChild(container);
                 });
-                
+
                 section.appendChild(exoRow);
-                
+
                 const exoGrid = document.createElement('div');
                 exoGrid.className = 'grid';
-                
+
                 exampleSet.forEach(file => {
                     const container = document.createElement('div');
                     container.className = 'audio-container';
-                    
+
                     const audio = document.createElement('audio');
                     audio.controls = true;
                     audio.src = `${root}/${category}/${exampleExo}/${file}`;
                     audio.preload = "none";
-                    
+
                     const label = document.createElement('p');
                     label.textContent = `${exampleExo} - ${file}`;
-                    
+
                     container.appendChild(label);
                     container.appendChild(audio);
                     exoGrid.appendChild(container);
                 });
-                
+
                 section.appendChild(exoGrid);
+
+                // 🔹 Add separator between examples
+                section.appendChild(document.createElement('hr')).className = 'separator';
             });
-            
+
             content.appendChild(section);
         });
     </script>
