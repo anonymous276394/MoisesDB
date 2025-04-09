@@ -52,6 +52,13 @@
             margin-top: 10px;
             margin-bottom: 20px;
         }
+        .original-label {
+            font-weight: bold;
+            color: #2b3ac0;
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
         .memory-guide-row {
             display: flex;
             justify-content: center;
@@ -154,6 +161,11 @@
                 const memoryGuideRow = document.createElement('div');
                 memoryGuideRow.className = 'memory-guide-row';
 
+                const origLabel = document.createElement('div');
+                origLabel.className = 'original-label';
+                origLabel.textContent = 'Corpus memory = track from original mix';
+                section.appendChild(origLabel);
+
                 fullSet.forEach((file, i) => {
                     if (i === 0 && example.includes('_exo')) return;
                     const container = document.createElement('div');
@@ -199,7 +211,7 @@
 
                 const exoLabel = document.createElement('div');
                 exoLabel.className = 'exo-label';
-                exoLabel.textContent = 'Mémoire Exogène';
+                exoLabel.textContent = 'Corpus memory = track outside original mix';
                 section.appendChild(exoLabel);
 
                 const exoRow = document.createElement('div');
